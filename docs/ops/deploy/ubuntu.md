@@ -57,7 +57,8 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 Be sure to install the latest stable Redis, as the package in the distro may be a bit old:
 
-    sudo apt-add-repository -y ppa:rwky/redis
+    # Dead Repo - sudo apt-add-repository -y ppa:rwky/redis
+    sudo add-apt-repository ppa:chris-lea/redis-server
     sudo apt-get update
     sudo apt-get install redis-server
 
